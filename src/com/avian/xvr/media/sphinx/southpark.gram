@@ -1,0 +1,8 @@
+#JSGF V1.0;
+
+grammar southpark;
+
+public <character> = kenny | cartman | stan | kyle | terrance phillip | canadians | chef 
+          mister hat | big gay al | wendy | timmy | hanky | garrison | cartmans mom | pip | ike  | mister mackey
+          | mephisto | jimbo | marvin ;
+

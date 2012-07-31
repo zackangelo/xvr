@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vxml version="2.1">
+	<form name="MyForm">
+		<block name="MyBlock">
+			<audio src="res/wav/beginning_pcm.wav"/>
+			<audio src="res/wav/end_pcm.wav"/>
+		</block>
+	</form>
+	
+	<hangup/>
+</vxml>

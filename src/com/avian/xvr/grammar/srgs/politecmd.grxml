@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0">
+
+	<rule id="polite">
+		<item repeat="0-">pretty</item>
+		<item>please</item>
+		<item repeat="0-1">with sugar on top</item>
+	</rule>		
+	
+	<rule id="object">
+		<one-of>
+			<item>window</item>
+			<item>door</item>
+		</one-of>
+	</rule>
+	
+	<rule id="verb">
+		<one-of>
+			<item>close</item>
+			<item>open</item>
+		</one-of>
+	</rule>
+	
+	<rule id="command" scope="public">
+		<item repeat="0-1">
+			<ruleref uri="#polite"/>
+		</item>
+		
+		<ruleref uri="#verb"/>
+		
+		<one-of>
+		      <item>the</item>
+		      <item>a</item>
+		</one-of>
+				
+		<ruleref uri="#object"/>
+	</rule>
+</grammar> 
+
+		
+		

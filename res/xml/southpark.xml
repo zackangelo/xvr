@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version = "2.0">
+  <form id="MainMenu">
+    <field name="SouthParkCharacter">
+      <prompt>Please say your favorite South Park character's name.</prompt>
+    </field>
+
+    <filled namelist="SouthParkCharacter">
+      <if cond="SouthParkCharacter == 'kenny'">
+        <prompt>Kenny has more lives than a cat.</prompt>
+      <elseif cond="SouthParkCharacter == 'cartman'"/>
+        <prompt>Cartman is not fat.  He is big boned.</prompt>
+      <elseif cond="SouthParkCharacter == 'stan'"/>
+        <prompt>Stan likes Wendy.</prompt>
+      <elseif cond="SouthParkCharacter == 'kyle'"/>
+        <prompt>Kyle has a gay dog.</prompt>
+      <elseif cond="SouthParkCharacter == 'canadians'"/>
+        <prompt>Canada.  What is that aboot?</prompt>
+      <elseif cond="SouthParkCharacter == 'chef'"/>
+        <prompt>Chef is the coolest man in South Park.</prompt>
+      <elseif cond="SouthParkCharacter == 'misterhat'"/>
+        <prompt>Mister Hat is a puppet.</prompt>
+      <elseif cond="SouthParkCharacter == 'biggayal'"/>
+        <prompt>Big Gay Al is gay.</prompt>
+      <elseif cond="SouthParkCharacter == 'wendy'"/>
+        <prompt>Wendy likes Stan.</prompt>
+      <elseif cond="SouthParkCharacter == 'timmy'"/>
+        <prompt>Timmmy!  Timmmy tim maugh!</prompt>
+      <elseif cond="SouthParkCharacter == 'hanky'"/>
+        <prompt>Mister Hanky, the Christmas poo.</prompt>
+      <elseif cond="SouthParkCharacter == 'garrison'"/>
+        <prompt>Mister Garrison is gay.</prompt>
+      <elseif cond="SouthParkCharacter == 'cartmansmom'"/>
+        <prompt>Cartman's mom loves the Denver Broncos.</prompt>
+      <elseif cond="SouthParkCharacter == 'pip'"/>
+        <prompt>Pip is British.</prompt>
+      <elseif cond="SouthParkCharacter == 'ike'"/>
+      <prompt>Ike is also Canadian.</prompt>
+      <elseif cond="SouthParkCharacter == 'mistermackey'"/>
+        <prompt>Mister Mackey.  Mmmmmmkay.</prompt>
+      <elseif cond="SouthParkCharacter == 'mephisto'"/>
+        <prompt>Mephisto enjoys experimenting on animals.</prompt>
+      <elseif cond="SouthParkCharacter == 'jimbo'"/>
+        <prompt>Jimbo is a redneck.</prompt>
+      <elseif cond="SouthParkCharacter == 'marvin'"/>
+        <prompt>Marvin is really hungry.</prompt>
+      <else/>
+      <prompt>
+        A match has occurred, but no specific if statement
+        was written for it.  Probably just a minor character
+        like Tweak or Jimbo's gun-toting friend.
+      </prompt>
+      </if> 
+      <goto next="#MainMenu"/>
+    </filled>
+  </form>
+</vxml>

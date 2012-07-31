@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<configGui propertyBase="com.avian.xvr">
+	<!--  tells the config gui where to look for icons and other crap -->
+	<resources class="com.avian.xvr.util.config.Application"/>
+	
+	<page propertyBase="telephony" name="Telephony">
+		<page propertyBase="voip" name="Voice-over-IP">	
+			<page propertyBase="sip" name="Session Initiation Protocol">
+				<section name="UDP/IP Settings">
+					<property label="Interface" name="interface" type="text" size="32"/>
+					<property label="Port" name="port" type="text" size="8"/>
+				</section>
+				
+				<section name="User Agent Settings">
+					<property label="User" name="ua.user" type="text" size="32"/>
+					<property label="Host" name="ua.host" type="text" size="32"/>
+				</section>
+			</page>
+			<page propertyBase="rtp" name="Real-time Transmission Protocol">
+				<section name="UDP/IP Settings">
+					<property label="Port base" name="portbase" type="text" size="8"/>
+				</section>
+			</page>
+		</page>
+		
+		<page propertyBase="jtapi" name="Java TAPI">
+		</page>
+		
+		<page propertyBase="mstapi" name="Windows TAPI">
+		</page>	
+	</page>
+	
+	<page propertyBase="interpreter" name="Interpreter">
+		<page propertyBase="recognizer" name="Recognizers">
+			<page propertyBase="s4" name="Sphinx4">
+			</page>
+			
+			<page propertyBase="mrcp" name="MRCP">
+			</page>
+		</page>
+		
+		<page name="Synthesizers">
+			<page propertyBase="freetts" name="FreeTTS">
+			</page>
+			
+			<page propertyBase="sapi51" name="Microsoft SAPI 5.1">
+				<section name="Basic Settings">
+					<property label="Voice" name="voice" type="comboSelect">
+						<choiceEnumeration source="com.avian.xvr.media.sapi.VoiceConfigEnumerator"/>
+					</property>
+				</section>
+			</page>
+			
+			<page propertyBase="mrcp" name="MRCP">
+			</page>
+		</page>
+		
+		<page propertyBase="voicexml" name="VoiceXML 2.0">
+		</page>
+		
+		<page propertyBase="ccxml" name="CCXML 1.0">
+		</page>
+	</page>
+	
+	<page propertyBase="routing" name="Application Routing">
+		<page propertyBase="basicdnis" name="Basic DNIS Routing">
+			<section name="Basic Settings">
+				<property name="mapurl" label="Route Map URL" type="text"/>
+			</section>
+		</page>
+	</page>
+	
+	<page propertyBase="licensing" name="Licensing">
+	</page> 
+		
+</configGui>

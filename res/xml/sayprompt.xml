@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<vxml version="2.0">
+<!--
+	<form>
+		<block name="block1">
+			<prompt>This is a test message.</prompt>
+		</block>
+	</form>
+-->
+
+	<form>
+		<field name="numberField">
+			<prompt>Please tell me your favorite number. </prompt>
+			<prompt>Again tell me your favorite number. </prompt>
+		</field>
+		
+		<field name="booleanField">
+			<prompt>Please tell me your favorite number.</prompt>
+		</field>
+		
+		<field name="anotherNumberField">
+			<prompt>Please tell me another number</prompt>
+		</field>
+	</form>
+</vxml>

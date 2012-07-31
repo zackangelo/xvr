@@ -1,0 +1,34 @@
+Tag TODO:
+
+<assign> Assign a variable a value 5.3.2  
+<catch> Catch an event 5.2.2  
+<choice> Define a menu item 2.2.2 
+<clear> Clear one or more form item variables 5.3.3  
+<enumerate> Shorthand for enumerating the choices in a menu 2.2.4 
+<error> Catch an error event 5.2.3  
+<exit> Exit a session 5.3.9  
+<grammar> Specify a speech recognition or DTMF grammar 3.1  
+<help> Catch a help event 5.2.3  
+<initial> Declares initial logic upon entry into a (mixed initiative) form 2.3.3  
+<link> Specify a transition common to all dialogs in the link's scope 2.5  
+<log> Generate a debug message 5.3.13  
+<menu> A dialog for choosing amongst alternative destinations 2.2.1 
+<meta> Define a metadata item as a name/value pair 6.2.1  
+<metadata> Define metadata information using a metadata schema 6.2.2  
+<noinput> Catch a noinput event 5.2.3  
+<nomatch> Catch a nomatch event 5.2.3  
+<object> Interact with a custom extension 2.3.5  
+<option> Specify an option in a <field> 2.3.1.3  
+<param> Parameter in <object> or <subdialog> 6.4  
+<prompt> Queue speech synthesis and audio output to the user 4.1  
+<property> Control implementation platform settings. 6.3  
+<record> Record an audio sample 2.3.6  
+<reprompt> Play a field prompt when a field is re-visited after an event 5.3.6  
+<return> Return from a subdialog. 5.3.10  
+<subdialog> Invoke another dialog as a subdialog of the current one 2.3.4  
+<submit> Submit values to a document server 5.3.8  
+<throw> Throw an event. 5.2.1  
+<transfer> Transfer the caller to another destination 2.3.7  
+<value> Insert the value of an expression in a prompt 4.1.4  
+<var> Declare a variable 5.3.1  
+<vxml> Top-level element in each VoiceXML document 1.5.1  

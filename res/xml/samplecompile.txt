@@ -1,0 +1,26 @@
+MainMenu: 
+MainMenu_SouthParkCharacter: 
+				queueSynth "Please say your favorite South Park character's name."
+				loadGrammar "text/gsl","[kenny cartman]"
+				playSynth
+				waitForInput
+MainMenu_noinput:		
+				playSynth "I did not hear anything."
+				goto MainMenu_SouthParkCharacter
+MainMenu_nomatch:		
+				playSynth "I did not recognize that character. Please try again."
+				goto MainMenu_SouthParkCharacter
+MainMenu_filled:
+_if0_1:				
+				gotoIfFalse "SouthParkCharacter=='kenny'",_if0_2
+				playSynth "You said Kenny."
+				goto MainMenu_filled_end
+_if0_2:				
+				gotoIfFalse "SouthParkCharacter=='cartman'",_if0_else
+				playSynth "You said cartman." 
+				goto MainMenu_filled_end
+_if0_else:			
+				playSynth "You said someone I didn't recognize."
+				goto MainMenu_filled_end
+MainMenu_filled_end:
+				hangup
